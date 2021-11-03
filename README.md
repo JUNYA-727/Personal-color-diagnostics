@@ -44,6 +44,8 @@ pip install imutils
 * 作成したモデルをdetect.pyのモデルの読み込みにパスを記載して実行する
 <img width="714" alt="スクリーンショット 2021-11-03 22 08 05" src="https://user-images.githubusercontent.com/61785070/140065688-318aa913-0ddc-445c-a37f-3821b7df30ff.png">
 
+# Note
+モデルの容量が大きいため､ダウンロードを行っても実行することができません｡
  
 # Author
 * k.junya0727@gmail.com
