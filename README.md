@@ -6,8 +6,7 @@
 また､最も近いタイプを表示する｡
  
 # Requirement
- 
-detect.pyを使用するためのライブラリ
+ 開発に使用したライブラリなど
  
 * tensorflow 2.5.0
 * opencv 4.5.2.52
@@ -16,8 +15,7 @@ detect.pyを使用するためのライブラリ
  
 # Installation
  
-Requirementで列挙したライブラリなどのインストール方法を説明する
- 
+Requirementで列挙したライブラリなどのインストール方法
 ```bash
 pip install tensorflow 
 ```
@@ -35,23 +33,14 @@ pip install imutils
 ```
  
 # Usage
+ 作成したモデルをHDF5で保存をしましたが､モデルの容量が大きすぎてgithub上に公開できないため､モデルの作成手順を記載しておきます｡
  
-DEMOの実行方法など、"hoge"の基本的な使い方を説明する
+* 春､夏､秋､冬ごとにパーソナルカラーが判明している人の画像を保存を行う｡
+* dlibのshape_predictor_68_face_landmarks.datを用いてその人物の顔もしくは特徴量となる目や口だけを保存する｡
+* IncepitonV3を使用して転移学習を行い､モデルを作成する｡
  
-```bash
-git clone https://github.com/hoge/~
-cd examples
-python demo.py
-```
- 
-# Note
- 
-注意点などがあれば書く
+
  
 # Author
- 
-作成情報を列挙する
- 
-* 作成者
-* 所属
-* E-mail
+* k.junya0727@gmail.com
+* 具体的な詳細であったり､質問等ございましたらご気軽に連絡ください
