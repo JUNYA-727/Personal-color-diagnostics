@@ -36,9 +36,13 @@ pip install imutils
  作成したモデルをHDF5で保存をしましたが､モデルの容量が大きすぎてgithub上に公開できないため､モデルの作成手順を記載しておきます｡
  
 * 春､夏､秋､冬ごとにパーソナルカラーが判明している人の画像を保存を行う｡
-* dlibのshape_predictor_68_face_landmarks.datを用いてその人物の顔もしくは特徴量となる目や口だけを保存する｡
+* dlibのshape_predictor_68_face_landmarks.datを用いて人物のランドマークを検出する｡
+![face](https://user-images.githubusercontent.com/61785070/140064480-fac8e45b-5c3d-426b-a949-8ef1a59ef5e6.png)
+
+* ランドマーク検出後に顔や目､口といった特徴量だけを保存する｡
 * IncepitonV3を使用して転移学習を行い､モデルを作成する｡
- 
+* 作成したモデルをdetect.pyのモデルの読み込みにパスを記載して実行する
+<img width="714" alt="スクリーンショット 2021-11-03 22 08 05" src="https://user-images.githubusercontent.com/61785070/140065688-318aa913-0ddc-445c-a37f-3821b7df30ff.png">
 
  
 # Author
